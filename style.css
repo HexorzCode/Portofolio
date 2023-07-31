@@ -19,16 +19,17 @@ span.sec-text::before{
     width: 100%;
     background-color: white;
     border-left: 2px solid skyblue;
-    animation: animate 4s steps(15) infinite;
+    animation: animate 6s steps(15) infinite;
 }
 
 @keyframes animate{
     40%, 60%{
-        left: calc(100% + 4px);
+        left: calc(100% + 2px);
         width: 0;
     }
     100%{
         left:0;
         width:100%;
     }
+    
 }
