@@ -1,0 +1,34 @@
+
+
+.container-text span{
+    position:relative;
+    color:skyblue;
+    font-size:30px;
+    font-weight: 500;
+}
+.container-text span.first-text{
+    color: black;
+}
+
+span.sec-text::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid skyblue;
+    animation: animate 4s steps(15) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+        width: 0;
+    }
+    100%{
+        left:0;
+        width:100%;
+    }
+}
